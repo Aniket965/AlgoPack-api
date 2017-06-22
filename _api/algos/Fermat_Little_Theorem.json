@@ -1,0 +1,17 @@
+{
+  "filepaths": [
+    "Fermat_Little_Theorem.c",
+    "Fermat_Little_Theorem.coffee",
+    "Fermat_Little_Theorem.cpp",
+    "Fermat_Little_Theorem.py",
+    "Fermat_Little_Theorem.rb"
+  ],
+  "langauges": [
+    "C",
+    "CoffeeScript",
+    "C++",
+    "Python",
+    "Ruby"
+  ],
+  "no_of_files": 5
+}

@@ -1,0 +1,19 @@
+{
+  "filepaths": [
+    "Kadane_Algorithm.coffee",
+    "Kadane_Algorithm.cpp",
+    "Kadane_Algorithm.cs",
+    "Kadane_Algorithm.java",
+    "Kadane_Algorithm.py",
+    "Kadane_Algorithm.rb"
+  ],
+  "langauges": [
+    "CoffeeScript",
+    "C++",
+    "C#",
+    "Java",
+    "Python",
+    "Ruby"
+  ],
+  "no_of_files": 6
+}

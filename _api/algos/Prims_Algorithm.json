@@ -1,0 +1,13 @@
+{
+  "filepaths": [
+    "Prims_Algorithm.c",
+    "Prims_Algorithm.cpp",
+    "Prims_Algorithm.py"
+  ],
+  "langauges": [
+    "C",
+    "C++",
+    "Python"
+  ],
+  "no_of_files": 3
+}

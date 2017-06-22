@@ -1,0 +1,15 @@
+{
+  "filepaths": [
+    "Queue_Using_Arrays.c",
+    "Queue_Using_Arrays.cpp",
+    "Queue_Using_Arrays.js",
+    "Queue_Using_Arrays.py"
+  ],
+  "langauges": [
+    "C",
+    "C++",
+    "JavaScript",
+    "Python"
+  ],
+  "no_of_files": 4
+}

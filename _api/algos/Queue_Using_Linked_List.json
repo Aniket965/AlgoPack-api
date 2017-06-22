@@ -1,0 +1,15 @@
+{
+  "filepaths": [
+    "Queue_Linked_List.c",
+    "Queue_Linked_List.cpp",
+    "Queue_Linked_List.java",
+    "Queue_Linked_List.py"
+  ],
+  "langauges": [
+    "C",
+    "C++",
+    "Java",
+    "Python"
+  ],
+  "no_of_files": 4
+}

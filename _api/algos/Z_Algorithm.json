@@ -1,0 +1,13 @@
+{
+  "filepaths": [
+    "Z_Algorithm.coffee",
+    "Z_Algorithm.cpp",
+    "Z_Algorithm.py"
+  ],
+  "langauges": [
+    "CoffeeScript",
+    "C++",
+    "Python"
+  ],
+  "no_of_files": 3
+}

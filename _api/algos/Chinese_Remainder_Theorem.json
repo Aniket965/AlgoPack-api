@@ -1,0 +1,17 @@
+{
+  "filepaths": [
+    "Chinese_Remainder_Theorem.coffee",
+    "Chinese_Remainder_Theorem.cpp",
+    "Chinese_Remainder_Theorem.cs",
+    "Chinese_Remainder_Theorem.java",
+    "Chinese_Remainder_Theorem.py"
+  ],
+  "langauges": [
+    "CoffeeScript",
+    "C++",
+    "C#",
+    "Java",
+    "Python"
+  ],
+  "no_of_files": 5
+}

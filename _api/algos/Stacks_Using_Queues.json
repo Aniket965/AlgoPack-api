@@ -1,0 +1,17 @@
+{
+  "filepaths": [
+    "Efficient_Dequeue.cpp",
+    "Efficient_Dequeue.java",
+    "Efficient_Enqueue.cpp",
+    "Efficient_Enqueue.java",
+    "Stack.py"
+  ],
+  "langauges": [
+    "C++",
+    "Java",
+    "C++",
+    "Java",
+    "Python"
+  ],
+  "no_of_files": 5
+}

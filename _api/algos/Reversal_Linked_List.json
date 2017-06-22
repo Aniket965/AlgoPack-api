@@ -1,0 +1,15 @@
+{
+  "filepaths": [
+    "Reversal_Linked_List.c",
+    "Reversal_Linked_List.cpp",
+    "Reversal_Linked_List.java",
+    "Reversal_Linked_List.py"
+  ],
+  "langauges": [
+    "C",
+    "C++",
+    "Java",
+    "Python"
+  ],
+  "no_of_files": 4
+}

@@ -1,0 +1,27 @@
+{
+  "filepaths": [
+    "Binary_Search.c",
+    "Binary_Search.coffee",
+    "Binary_Search.cpp",
+    "Binary_Search.cs",
+    "Binary_Search.go",
+    "Binary_Search.java",
+    "Binary_Search.js",
+    "Binary_Search.php",
+    "Binary_Search.py",
+    "Binary_Search.rb"
+  ],
+  "langauges": [
+    "C",
+    "CoffeeScript",
+    "C++",
+    "C#",
+    "Go",
+    "Java",
+    "JavaScript",
+    "PHP",
+    "Python",
+    "Ruby"
+  ],
+  "no_of_files": 10
+}

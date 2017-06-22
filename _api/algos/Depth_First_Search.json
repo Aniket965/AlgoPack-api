@@ -1,0 +1,13 @@
+{
+  "filepaths": [
+    "Depth_First_Search.c",
+    "Depth_First_Search.cpp",
+    "Depth_First_Search.py"
+  ],
+  "langauges": [
+    "C",
+    "C++",
+    "Python"
+  ],
+  "no_of_files": 3
+}

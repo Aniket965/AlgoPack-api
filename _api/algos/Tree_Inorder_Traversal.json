@@ -1,0 +1,17 @@
+{
+  "filepaths": [
+    "Tree_Inorder_Traversal.c",
+    "Tree_Inorder_Traversal.cpp",
+    "Tree_Inorder_Traversal.java",
+    "Tree_Inorder_Traversal.php",
+    "Tree_Inorder_Traversal.py"
+  ],
+  "langauges": [
+    "C",
+    "C++",
+    "Java",
+    "PHP",
+    "Python"
+  ],
+  "no_of_files": 5
+}

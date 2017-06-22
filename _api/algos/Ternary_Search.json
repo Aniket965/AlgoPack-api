@@ -1,0 +1,15 @@
+{
+  "filepaths": [
+    "Ternary_Search.coffee",
+    "Ternary_Search.cpp",
+    "Ternary_Search.java",
+    "Ternary_Search.py"
+  ],
+  "langauges": [
+    "CoffeeScript",
+    "C++",
+    "Java",
+    "Python"
+  ],
+  "no_of_files": 4
+}

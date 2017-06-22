@@ -1,0 +1,13 @@
+{
+  "filepaths": [
+    "Dynamic_Stack.c",
+    "Dynamic_Stack.java",
+    "Dynamic_Stack.py"
+  ],
+  "langauges": [
+    "C",
+    "Java",
+    "Python"
+  ],
+  "no_of_files": 3
+}

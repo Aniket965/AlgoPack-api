@@ -1,0 +1,23 @@
+{
+  "filepaths": [
+    "Euclidean_Algorithm.clj",
+    "Euclidean_Algorithm.coffee",
+    "Euclidean_Algorithm.cpp",
+    "Euclidean_Algorithm.cs",
+    "Euclidean_Algorithm.java",
+    "Euclidean_Algorithm.php",
+    "Euclidean_Algorithm.py",
+    "Euclidean_Algorithm.scala"
+  ],
+  "langauges": [
+    "Clojure",
+    "CoffeeScript",
+    "C++",
+    "C#",
+    "Java",
+    "PHP",
+    "Python",
+    "Scala"
+  ],
+  "no_of_files": 8
+}

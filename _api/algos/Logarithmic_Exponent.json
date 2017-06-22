@@ -1,0 +1,15 @@
+{
+  "filepaths": [
+    "Logarithmic_Exponent.c",
+    "Logarithmic_Exponent.coffee",
+    "Logarithmic_Exponent.cpp",
+    "Logarithmic_Exponent.py"
+  ],
+  "langauges": [
+    "C",
+    "CoffeeScript",
+    "C++",
+    "Python"
+  ],
+  "no_of_files": 4
+}

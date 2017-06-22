@@ -1,0 +1,19 @@
+{
+  "filepaths": [
+    "Quick_Sort.c",
+    "Quick_Sort.coffee",
+    "Quick_Sort.cpp",
+    "Quick_Sort.java",
+    "Quick_Sort.py",
+    "Quick_Sort.rb"
+  ],
+  "langauges": [
+    "C",
+    "CoffeeScript",
+    "C++",
+    "Java",
+    "Python",
+    "Ruby"
+  ],
+  "no_of_files": 6
+}

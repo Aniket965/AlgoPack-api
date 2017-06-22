@@ -1,0 +1,27 @@
+{
+  "filepaths": [
+    "Bubble_Sort.c",
+    "Bubble_Sort.coffee",
+    "Bubble_Sort.cpp",
+    "Bubble_Sort.cs",
+    "Bubble_Sort.java",
+    "Bubble_Sort.js",
+    "Bubble_Sort.php",
+    "Bubble_Sort.py",
+    "Bubble_Sort.rb",
+    "Bubble_Sort.sh"
+  ],
+  "langauges": [
+    "C",
+    "CoffeeScript",
+    "C++",
+    "C#",
+    "Java",
+    "JavaScript",
+    "PHP",
+    "Python",
+    "Ruby",
+    "Shell"
+  ],
+  "no_of_files": 10
+}

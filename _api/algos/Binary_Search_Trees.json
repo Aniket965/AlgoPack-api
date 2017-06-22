@@ -1,0 +1,19 @@
+{
+  "filepaths": [
+    "BinarySearchTree.c",
+    "BinarySearchTree.cpp",
+    "BinarySearchTree.cs",
+    "BinarySearchTree.java",
+    "BinarySearchTree.py",
+    "BinarySearchTree.rb"
+  ],
+  "langauges": [
+    "C",
+    "C++",
+    "C#",
+    "Java",
+    "Python",
+    "Ruby"
+  ],
+  "no_of_files": 6
+}

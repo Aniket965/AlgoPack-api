@@ -1,0 +1,17 @@
+{
+  "filepaths": [
+    "LinkedList.java",
+    "Linked_List.c",
+    "Linked_List.cpp",
+    "Linked_List.java",
+    "Linked_List.py"
+  ],
+  "langauges": [
+    "Java",
+    "C",
+    "C++",
+    "Java",
+    "Python"
+  ],
+  "no_of_files": 5
+}

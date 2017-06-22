@@ -1,0 +1,13 @@
+{
+  "filepaths": [
+    "Stacks.cpp",
+    "Stacks.java",
+    "Stacks.py"
+  ],
+  "langauges": [
+    "C++",
+    "Java",
+    "Python"
+  ],
+  "no_of_files": 3
+}

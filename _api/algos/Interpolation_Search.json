@@ -1,0 +1,21 @@
+{
+  "filepaths": [
+    "Interpolation_Search.coffee",
+    "Interpolation_Search.cs",
+    "Interpolation_Search.go",
+    "Interpolation_Search.java",
+    "Interpolation_Search.js",
+    "Interpolation_Search.php",
+    "Interpolation_Search.py"
+  ],
+  "langauges": [
+    "CoffeeScript",
+    "C#",
+    "Go",
+    "Java",
+    "JavaScript",
+    "PHP",
+    "Python"
+  ],
+  "no_of_files": 7
+}

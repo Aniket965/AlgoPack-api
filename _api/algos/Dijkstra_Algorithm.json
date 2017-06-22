@@ -1,0 +1,19 @@
+{
+  "filepaths": [
+    "Dijkstra_Algorithm.c",
+    "Dijkstra_Algorithm.cpp",
+    "Dijkstra_Algorithm.java",
+    "Dijkstra_Algorithm.py",
+    "Dijkstra_Algorithm_STL.cpp",
+    "Dijkstra_Efficient.cpp"
+  ],
+  "langauges": [
+    "C",
+    "C++",
+    "Java",
+    "Python",
+    "C++",
+    "C++"
+  ],
+  "no_of_files": 6
+}

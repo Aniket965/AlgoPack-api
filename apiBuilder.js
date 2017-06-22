@@ -27,7 +27,18 @@ rimraf.sync(adsnRepoDir + '/.git');
 var algoNames = dirs(process.cwd() + '/Algo_Ds_Notes')
 // console.log(algoNames);
 
-var data = {};
+
+// Api for algo list
+var algoList = {
+    availabe_algo : algoNames,
+    size : algoNames.length
+};
+var mainAPI_Dir = process.cwd() + '/_api/algoList.json';
+jsonfile.writeFile(mainAPI_Dir, algoList, { spaces: 2 }, function (err) {
+    console.error(err)
+})
+
+
 
 algoNames.forEach(function (algo) {
 
@@ -48,6 +59,8 @@ algoNames.forEach(function (algo) {
                 
                 else 
                     langList.push(lang);
+
+                
                 
             }
 
@@ -58,15 +71,18 @@ algoNames.forEach(function (algo) {
 
     algoData['filepaths'] = algoList;
     algoData['langauges'] = langList;
+    algoData['no_of_files'] = langList.length;
 
-    data[algo] = algoData;
+    var mainAPI_Dir = process.cwd() + '/_api/algos/'+algo+'.json';
+        jsonfile.writeFile(mainAPI_Dir, algoData, { spaces: 2 }, function (err) {
+    console.error(err)
+})
+ 
+
 });
 
 
-var mainAPI_Dir = process.cwd() + '/_api/algoList.json';
-jsonfile.writeFile(mainAPI_Dir, data, { spaces: 2 }, function (err) {
-    console.error(err)
-})
+
 
 
 

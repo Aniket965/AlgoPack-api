@@ -1,0 +1,19 @@
+{
+  "filepaths": [
+    "Naive_Approach.coffee",
+    "Naive_Approach.cpp",
+    "Naive_Approach.java",
+    "Naive_Approach.php",
+    "Naive_Approach.py",
+    "Naive_Approach.rb"
+  ],
+  "langauges": [
+    "CoffeeScript",
+    "C++",
+    "Java",
+    "PHP",
+    "Python",
+    "Ruby"
+  ],
+  "no_of_files": 6
+}

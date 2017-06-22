@@ -1,0 +1,17 @@
+{
+  "filepaths": [
+    "Shaker_sort.cpp",
+    "Shaker_sort.cs",
+    "Shaker_sort.java",
+    "Shaker_sort.js",
+    "shaker_sort.c"
+  ],
+  "langauges": [
+    "C++",
+    "C#",
+    "Java",
+    "JavaScript",
+    "C"
+  ],
+  "no_of_files": 5
+}

@@ -1,0 +1,23 @@
+{
+  "filepaths": [
+    "Linear_Search.c",
+    "Linear_Search.coffee",
+    "Linear_Search.cpp",
+    "Linear_Search.cs",
+    "Linear_Search.java",
+    "Linear_Search.php",
+    "Linear_Search.py",
+    "Linear_Search.rb"
+  ],
+  "langauges": [
+    "C",
+    "CoffeeScript",
+    "C++",
+    "C#",
+    "Java",
+    "PHP",
+    "Python",
+    "Ruby"
+  ],
+  "no_of_files": 8
+}
