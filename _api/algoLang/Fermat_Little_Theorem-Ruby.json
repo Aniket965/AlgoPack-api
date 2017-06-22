@@ -1,0 +1,3 @@
+{
+  "mainALGO": "def gcdFunction(a, b)\r\n  if a == 0\r\n    return b\r\n  end\r\n  return gcdFunction(b % a, a)\r\nend\r\n\r\ndef power(x, y, m)\r\n  if y == 0\r\n    return 1\r\n  end\r\n\r\n  p = power(x, (y/2).to_i, m) % m\r\n  p = (p * p) % m\r\n\r\n  if y % 2 == 0\r\n    return p\r\n  else\r\n    return (x * p) % m\r\n  end\r\nend\r\n\r\ndef modInverse(a, m)\r\n  gcd = gcdFunction(a, m)\r\n\r\n  if gcd != 1\r\n    return -1\r\n  else\r\n    return power(a, m - 2, m)\r\n  end\r\nend\r\n\r\na = 3\r\nm = 11\r\n\r\nans = modInverse(a, m)\r\n\r\nif ans == -1\r\n  puts \"Inverse doesn't exist\"\r\nelse\r\n  puts \"Modular multiplicative inverse is \" + ans.to_s\r\nend\r\n\r\n# OUTPUT\r\n\r\n# Modular multiplicative inverse is 4\r\n"
+}

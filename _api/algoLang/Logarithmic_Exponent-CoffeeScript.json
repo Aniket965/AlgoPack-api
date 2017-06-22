@@ -1,0 +1,3 @@
+{
+  "mainALGO": "exponent = (a, x) ->\n    result = 1\n    value = a\n\n    while x isnt 0\n        if x & 1\n            result *= value\n        value *= value\n\n        x = Math.floor(x / 2)\n\n    result\n\nbase = 3\npower = 5\n\nconsole.log \"Value of \" + base + \" raise to the power \" + power + \" is \" + exponent base, power\n\n\n### Output\n\nValue of 3 raise to the power 5 is 243\n\n###\n"
+}

@@ -1,0 +1,3 @@
+{
+  "mainALGO": "#include <iostream>\n#include <vector>\n\nusing namespace std;\n\nvoid search(string s, string t) {\n\tstring p = t + \"$\" + s;\n\tint n = (int)p.size();\n\tvector <int> pi(n + 1, 0);\n\tfor (int i = 1; i < n; ++i) {\n\t\tint j = pi[i - 1];\n\t\twhile (j > 0 && p[i] != p[j])\n\t\t\tj = pi[j - 1];\n\t\tif (p[i] == p[j])\n\t\t\t++j;\n\t\tpi[i] = j;\n\t}\n\tfor (int i = (int)t.size(); i < n; ++i)\n\t\tif (pi[i] == (int)t.size())\n\t\t\tcout << \"Pattern found at \" << i - 2 * (int)t.size() + 1 << endl;\n}\n\nint main() {\n\tstring text = \"namanchamanbomanamansanam\";\n\tstring pattern = \"aman\";\n\tsearch(text, pattern);\n\treturn 0;\n}\n\n/* Output\n\nPattern found at 2\nPattern found at 8\nPattern found at 17\n\n*/\n"
+}

@@ -1,0 +1,3 @@
+{
+  "mainALGO": "After = (s, f) -> setTimeout f, s*1000\n\nSleep_Sort = (array) ->\n    for n in array\n        do (n) -> After n, -> console.log n\n\ndo ->\n    array = [2, 4, 3, 1, 6, 8, 4]\n    Sleep_Sort array\n\n### Output\n\n1\n2\n3\n4\n4\n6\n8\n\n###\n"
+}

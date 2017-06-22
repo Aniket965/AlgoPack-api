@@ -1,0 +1,3 @@
+{
+  "mainALGO": "<?php\n\n$str1 = \"namanchamanbomanamansanam\";\n$str2 = \"aman\";\n\n$len1 = strlen($str1);\n$len2 = strlen($str2);\n\nfor($i = 0; $i <= $len1 - $len2; $i++)\n    {\n        for($j = 0; $j < $len2; $j++)\n            if($str1[$i + $j] != $str2[$j])\n                break;\n\n        if($j == $len2)\n           echo \"Pattern Found at \".($i+1).\"<br>\" ;\n    }\n?>\n"
+}

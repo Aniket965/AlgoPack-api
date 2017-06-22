@@ -1,0 +1,3 @@
+{
+  "mainALGO": "#include <stdio.h>\n\nint search(int a[],int size, int elt)\n{\n\tint i,flag = -1;\n\tfor (i=0;i<size;i++)\n\t\tif (a[i] == elt)\n\t\t{\n\t\t\tflag = i+1;\n\t\t\tbreak;\n\t\t}\n\treturn flag;\t//Return position\n}\n\nint main()\n{\n\tint arr[] = {23,43,2,67,90,2,6,19};\n\tint pos;\n\t//Search 6 in the list\n\tpos = search(arr,8,6);\n\tif (pos != -1)\n\t\tprintf(\"Number found at %d\\n\", pos);\n\telse\n\t\tprintf(\"Number not found\\n\");\n\t//Search 4 in the list\n\tpos = search(arr,8,4);\n\t\tif (pos != -1)\n\t\tprintf(\"Number found at %d\\n\", pos);\n\telse\n\t\tprintf(\"Number not found\\n\");\n}\n\n/*Output\nNumber found at 7\nNumber not found\n*/\n"
+}

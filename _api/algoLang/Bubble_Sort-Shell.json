@@ -1,0 +1,3 @@
+{
+  "mainALGO": "A=(54 34 55 67 11)\r\n\r\nfor ((i=0;i<5;i++))\r\ndo\r\n for((j=0;j<4;j++))\r\n do\r\nif ((${A[j]} > ${A[$((j+1))]}))\r\nthen\r\n  a=${A[$j]}\r\n  A[$j]=${A[$((j+1))]}\r\n  A[$((j+1))]=$a\r\n    fi\r\n done\r\ndone\r\n    echo ${A[*]}\r\n\r\n\t\r\n#------\tOUTPUT -------\r\n# 11 34 54 55 67"
+}

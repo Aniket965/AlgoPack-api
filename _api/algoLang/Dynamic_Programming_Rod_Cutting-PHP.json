@@ -1,0 +1,3 @@
+{
+  "mainALGO": "<?php\n// Maximum Function\nfunction maximum($a, $b)\n{\n    if($a > $b)\n        return $a;\n    else\n        return $b;\n}\n\n// Max Money\nfunction money($cost, $n)\n{\n    $val = new SplFixedArray($n + 1);\n    $val[0] = 0;\n\n    for($i = 1; $i <= $n; $i++)\n    {\n        $max_value = 0;\n        for($j = 0; $j < $i; $j++)\n            $max_value = maximum($max_value, $cost[$j] + $val[$i-$j-1]);\n        $val[$i] = $max_value;\n     }\n     return $val[$n];\n}\n\n$cost = array(3, 5, 8, 9, 10, 17, 17, 20);\n$size = sizeof($cost);\necho money($cost, $size);\n\n\n// Output\n// 24\n\n?>\n"
+}

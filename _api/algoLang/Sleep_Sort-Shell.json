@@ -1,0 +1,3 @@
+{
+  "mainALGO": "#!/bin/bash\n\n// waits for specified number of seconds\nsleeper()\n{\n    sleep \"$1\"\n    echo \"$1\"\n}\n\necho\nwhile [ -n \"$1\" ]\ndo\n    sleeper \"$1\" & shift # sleeps and then shifts to next number in array\ndone\n\n# sample usage:\n# ./Sleep_Sort.sh 2 3 1 4\n# output:\n# 1\n# 2\n# 3\n# 4\n"
+}

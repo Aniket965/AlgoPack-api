@@ -1,0 +1,3 @@
+{
+  "mainALGO": "def search (text, pattern)\r\n  for i in (0 .. text.length - pattern.length)\r\n    j = 0\r\n    while j < pattern.length\r\n      if text[i+j] != pattern[j]\r\n        break\r\n      end\r\n        j += 1\r\n    end\r\n    if j == pattern.length\r\n      puts(\"Pattern found at \" + (i+1).to_s)\r\n    end\r\n  end\r\nend\r\n\r\ntext = \"random variables are so random\"\r\npattern = \"ran\"\r\nsearch(text,pattern)\r\n\r\n# Output\r\n# Pattern found at 1\r\n# Pattern found at 25\r\n"
+}

@@ -1,0 +1,3 @@
+{
+  "mainALGO": "# Finding greatest common divisor using Euclidean Algorithm\ngcdFunction = (a, b) ->\n    return b if a is 0\n\n    gcdFunction b % a, a\n\npower = (x, y, m) ->\n    return 1 if y is 0\n\n    p = power(x, Math.floor(y / 2), m) % m\n    p = (p * p) % m\n\n    if y % 2 is 0\n        p\n    else\n        (x * p) % m\n\nmodInverse = (a, m) ->\n    gcd = gcdFunction a, m\n\n    if gcd isnt 1\n        -1\n    else\n        power a, m - 2, m\n\n\na = 3\nm = 11\n\nans = modInverse a, m\n\nif ans is -1\n    console.log \"Inverse doesn't exist\"\nelse\n    console.log \"Modular multiplicative inverse is \" + ans\n\n\n### Output\n\nModular multiplicative inverse is 4\n\n###\n"
+}

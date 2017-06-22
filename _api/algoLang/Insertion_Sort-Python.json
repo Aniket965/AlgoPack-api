@@ -1,0 +1,3 @@
+{
+  "mainALGO": "# function for insertion sort\ndef Insertion_Sort(list):\n    for i in range(1, len(list)):\n        temp = list[i]\n        j = i - 1\n\n        while j >= 0 and list[j] > temp:\n            list[j + 1] = list[j]\n            j -= 1\n\n        list[j + 1] = temp\n\n# function to print list\ndef Print_list(list):\n    for i in range(0, len(list)):\n        print(list[i],end=\" \")\n\n    print()\n\nlist = [2, 4, 3, 1, 6, 8, 4]\n\nInsertion_Sort(list)\n\nPrint_list(list)\n\n# Output\n# 1 2 3 4 4 6 8\n"
+}

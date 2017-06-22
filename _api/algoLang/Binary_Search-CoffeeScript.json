@@ -1,0 +1,3 @@
+{
+  "mainALGO": "Binary_Search = (array, desired) ->\n    left = 0\n    right = array.length - 1\n\n    while left <= right\n        middle = left + (right - left) / 2\n\n        return middle if array[middle] is desired\n\n        if desired < array[middle]\n            right = middle - 1\n        else\n            left = middle + 1\n\n    -1\n\n\narray = [1, 2, 3, 4, 5, 6, 7]\n\nindex = Binary_Search array, 4\n\nif index isnt -1\n    console.log \"Found\"\nelse\n    console.log \"Not Found\"\n\nindex = Binary_Search array, 9\n\nif index isnt -1\n    console.log \"Found\"\nelse\n    console.log \"Not Found\"\n\n\n### Output\n\nFound\nNot Found\n\n###\n"
+}

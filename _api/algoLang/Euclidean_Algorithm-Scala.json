@@ -1,0 +1,3 @@
+{
+  "mainALGO": "object GCD extends App {\n  def GCD(num1: Int, num2: Int): Int = {\n    def iterate(a: Int, b: Int): Int = {\n      if (b == 0) {\n        return a\n      } else {\n        return iterate(b, a % b)\n      }\n    }\n    return iterate(num1, num2)\n  }\n\n  GCD(30, 105) // res1: Int = 15\n  GCD(105, 30) // res2: Int = 15\n}\n"
+}

@@ -1,0 +1,3 @@
+{
+  "mainALGO": "\nimport java.util.*;\nimport java.lang.*;\nimport java.io.*;\n\n\nclass Euclid\n{\n\tpublic static void main (String[] args) throws java.lang.Exception\n\t{\n\t\tint\ta = 30;\n\t\tint\tb = 105;\n\t\tint\tc = EuclidGCD(a,b);\n\t\tSystem.out.println(c);\n\t\t// prints 15\n\t\t// GCD of 30 and 105 is 15\n\t}\n\t\n\tpublic static int EuclidGCD(int a, int b)\n\t{\n\t\tif(b == 0)\n\t\t\treturn a;\n\t\telse\n\t\t\treturn EuclidGCD(b,a%b);\n\t}\n}\n"
+}

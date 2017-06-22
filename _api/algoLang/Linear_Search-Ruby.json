@@ -1,0 +1,3 @@
+{
+  "mainALGO": "#Method for Linear Search\r\ndef LinearSearch (array, searchedValue)\r\n  array.each do |value|\r\n    if value == searchedValue\r\n      return \"Value found.\"\r\n    end\r\n  end\r\n  return \"Value not found.\"\r\nend\r\n\r\n#Hardcoded Array\r\narray = [9,1,2,0,3]\r\n\r\nprint(array)\r\n\r\n#Searching for 0\r\nputs(\"\\nSearching for 0 in the array: \")\r\nprint(LinearSearch(array,0))\r\n\r\n#Searching for 4\r\nputs(\"\\nSearching for 4 in the array: \")\r\nprint(LinearSearch(array,4))\r\n\r\n\r\n#Output\r\n#[9, 1, 2, 0, 3]\r\n#Searching for 0 in the array: Value found.\r\n#Searching for 4 in the array: Value not found.\r\n"
+}

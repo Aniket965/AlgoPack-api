@@ -1,0 +1,3 @@
+{
+  "mainALGO": "package main\n\nimport (\n\t\"fmt\"\n\t\"strconv\"\n)\n\nfunc BinarySearch(array []int, desired int) (index int) {\n\tif len(array) <= 1 {\n\t\tindex = -1\n\t\treturn\n\t}\n\n\tleft := 0\n\tright := len(array) - 1\n\tfor left <= right {\n\t\tmid := left + (right-left)/2\n\t\tif array[mid] < desired {\n\t\t\tleft = mid + 1\n\t\t} else if array[mid] > desired {\n\t\t\tright = mid - 1\n\t\t} else {\n\t\t\tindex = mid\n\t\t\treturn\n\t\t}\n\t}\n\treturn\n}\n\nfunc main() {\n\tarray := []int{1, 2, 3, 4, 5, 6, 7}\n\tindex := BinarySearch(array, 4)\n\tif index != -1 {\n\t\tfmt.Println(\"Found 4 at \", strconv.Itoa(index))\n\t} else {\n\t\tfmt.Println(\"Not Found\")\n\t}\n}\n"
+}

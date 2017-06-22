@@ -1,0 +1,3 @@
+{
+  "mainALGO": "<?php\n\n$val1 = 23121;\n$val2 = 1422414;\n\nfunction gcd($a, $b) \n{  \n    if ($b == 0)  \n        return $a;  \n    return gcd($b, $a%$b);  \n}\n\necho \"GCD of \".$val1.\" and \".$val2.\" is \".gcd($val1,$val2);\n\n?>"
+}

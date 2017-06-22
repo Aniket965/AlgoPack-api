@@ -1,0 +1,3 @@
+{
+  "mainALGO": "# function for bubble sort\ndef Bubble_Sort(list):\n    for i in range(0, len(list) - 1):\n        for j in range(0, len(list) - i - 1):\n            # do swapping\n            if list[j] > list[j + 1]:\n                list[j], list[j + 1] = list[j + 1], list[j]\n\n# function to print list\ndef Print_list(list):\n    for i in range(0, len(list)):\n        print(list[i], end = \" \")\n\n    print()\n\nlist = [2, 4, 3, 1, 6, 8, 4]\n\nBubble_Sort(list)\n\nPrint_list(list)\n\n# Output\n# 1 2 3 4 4 6 8\n"
+}

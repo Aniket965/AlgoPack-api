@@ -1,0 +1,3 @@
+{
+  "mainALGO": "#include <stdio.h>\n#include <windows.h>\n#include <process.h>\n\nvoid routine(void *a)\n{\n    int n = *(int *) a;\n    Sleep(n);\n    printf(\"%d \", n);\n}\n\nvoid sleepSort(int arr[], int n)\n{\n    int i;\n    HANDLE threads[n];\n    for (i = 0; i < n; i++)\n        threads[i] = (HANDLE)_beginthread(&routine, 0, &arr[i]);\n    WaitForMultipleObjects(n, threads, TRUE, INFINITE);\n    return;\n}\n\nint main()\n{\n    int arr[] = {12, 23, 42, 3};\n    int n = sizeof(arr) / sizeof(arr[0]);\n\n    sleepSort (arr, n);\n\n    return 0;\n}\n\n//output\n/*\n3 12 23 42\n*/\n"
+}

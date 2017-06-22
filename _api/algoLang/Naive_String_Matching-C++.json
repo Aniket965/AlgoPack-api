@@ -1,0 +1,3 @@
+{
+  "mainALGO": "#include <iostream>\n\nusing namespace std;\n\nvoid search(string text, string pattern)\n{\n    int lengthText = text.length();\n    int lengthPattern = pattern.length();\n\n    for(int i = 0; i <= lengthText - lengthPattern; i++)\n    {\n        int j;\n\n        for(j = 0; j < lengthPattern; j++)\n            if(text[i + j] != pattern[j])\n                break;\n\n        if(j == lengthPattern)\n           cout << \"Pattern found at \" << i + 1 << endl;\n    }\n}\n\nint main()\n{\n   string text = \"namanchamanbomanamansanam\";\n   string pattern = \"aman\";\n   search(text, pattern);\n   return 0;\n}\n\n/* Output\n\nPattern found at 2\nPattern found at 8\nPattern found at 17\n\n*/\n"
+}

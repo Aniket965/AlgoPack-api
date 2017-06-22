@@ -1,0 +1,3 @@
+{
+  "mainALGO": "#Kadane's algorithm with Ruby\n\ndef kadane(array)\n  current_max = max_so_far = array[0]\n\n  for i in 1 .. array.length - 1\n    current_max += array[i]\n    if current_max < 0\n      current_max = 0\n    end\n    if max_so_far < current_max\n      max_so_far = current_max\n    end\n  end\n\n  return max_so_far\nend\n\narray = [-2, 1, -6, 4, -1, 2, 1, -5, 4]\n\nmax_subarray_sum = kadane(array)\n\nprint(max_subarray_sum)\n\n# Output\n# 6\n"
+}

@@ -1,0 +1,3 @@
+{
+  "mainALGO": "function Bubble_Sort(array)\n{\n    var temp;\n\n    for (var i = 0; i < array.length; i++)\n    {\n        for (var j = 0; j < array.length - i; j++)\n        {\n            if (array[j] > array[j + 1])\n            {\n                temp = array[j];\n                array[j] = array[j + 1];\n                array[j + 1] = temp;\n            }\n        }\n    }\n}\n\n\narray = [2, 4, 3, 1, 6, 8, 4];\n\nBubble_Sort(array);\nconsole.log(array);\n\n\n/* Output\n\n[ 1, 2, 3, 4, 4, 6, 8 ]\n\n*/\n"
+}

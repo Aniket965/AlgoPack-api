@@ -1,0 +1,3 @@
+{
+  "mainALGO": "#Function for insertion sort\r\ndef insertionSort (array)\r\n  for i in 1 .. array.length - 1\r\n    temp = array[i]                 #Store key value\r\n    j = i - 1\r\n    while j > 0 and array[j] > temp #Comparing with key and swapping accordingly\r\n      array[j+1] = array[j]\r\n      j = j - 1\r\n    end\r\n    array[j+1] = temp               #Final swap\r\n  end\r\nend\r\n\r\n#Hardcoded array\r\narray = [0,9,1,4,2]\r\n\r\n#Pre sort array\r\nprint(array)\r\n\r\nputs(\"\\nAfter Sorting:\\n\")\r\n\r\ninsertionSort(array)\r\n\r\n#Sorted Array\r\nprint(array)\r\n\r\n#Output\r\n#[0, 9, 1, 4, 2]\r\n#[0, 1, 2, 4, 9]\r\n"
+}

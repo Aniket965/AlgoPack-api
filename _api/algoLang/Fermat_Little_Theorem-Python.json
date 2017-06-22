@@ -1,0 +1,3 @@
+{
+  "mainALGO": "# Finding greatest common divisor using Euclidean Algorithm\ndef gcdFunction(a, b):\n    if a == 0:\n        return b\n\n    return gcdFunction(b % a, a)\n\ndef power(x, y, m):\n    if y == 0:\n        return 1\n\n    p = power(x, int(y / 2), m) % m\n    p = (p * p) % m\n\n    if y % 2 == 0:\n        return p\n    else:\n        return (x * p) % m\n\ndef modInverse(a, m):\n    gcd = gcdFunction(a, m)\n\n    if gcd != 1:\n        return -1\n    else:\n        return power(a, m - 2, m)\n\n\na = 3\nm = 11\n\nans = modInverse(a, m)\n\nif ans == -1:\n    print(\"Inverse doesn't exist\")\nelse:\n    print(\"Modular multiplicative inverse is \" + str(ans))\n\n\n''' Output\n\nModular multiplicative inverse is 4\n\n'''\n"
+}

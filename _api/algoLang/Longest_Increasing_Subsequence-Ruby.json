@@ -1,0 +1,3 @@
+{
+  "mainALGO": "def lis(arr)\n  n=arr.size\n  lis=Array.new(n, 1)\n\n  ans=-1<<30\n\n  n.times do |i|\n    i.times do |j|\n      if arr[j]<arr[i]\n        lis[i]=[lis[i], lis[j]+1].max\n        ans=[ans, lis[i]].max\n      end\n    end\n  end\n\n  ans\nend\n\narr = [10, 22, 9, 33, 21, 50, 41, 60]\n\nputs \"Size of the LIS is: #{lis(arr)}\"\n"
+}

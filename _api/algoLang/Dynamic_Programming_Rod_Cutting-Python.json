@@ -1,0 +1,3 @@
+{
+  "mainALGO": "\nINT_MIN = -32767\n\n# Function for money calculation\ndef money(price, n):\n    val = [0 for x in range(n+1)]\n    val[0] = 0\n\n    for i in range(1, n+1):\n        max_val = INT_MIN\n        for j in range(i):\n             max_val = max(max_val, price[j] + val[i-j-1])\n        val[i] = max_val\n\n    return val[n]\n\n# Testing the function\narr = [3, 5, 8, 9, 10, 17, 17, 20]\nsize = len(arr)\n\nprint(\"Maximum Money : \" + str(money(arr, size)))\n\n\n# Output\n# Maximum Money : 24\n"
+}

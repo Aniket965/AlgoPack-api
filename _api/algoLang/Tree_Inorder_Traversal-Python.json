@@ -1,0 +1,3 @@
+{
+  "mainALGO": "class node:\n    def __init__(self,key):\n        self.left = None\n        self.right = None\n        self.val = key\n\ndef InOrder(root):\n    if root:\n        InOrder(root.left)\n        print(root.val, end = \" \")\n        InOrder(root.right)\n\nroot = node(1)\nroot.left = node(2)\nroot.right = node(3)\nroot.left.left = node(4)\nroot.left.right = node(5)\nroot.right.left = node(6)\nroot.right.right = node(7)\n\nprint(\"In Order traversal of tree is\", end = \" \")\nInOrder(root)\n\n''' Output\n\nIn Order traversal of tree is 4 2 5 1 6 3 7\n\n'''\n"
+}

@@ -1,0 +1,9 @@
+{
+  "mainALGO": "#include <iostream>\n\nusing namespace std;\n\nclass Rectangle\n{\n    protected:\n       float length, breadth;\n\n   public:\n       Rectangle(): length(0.0), breadth(0.0)\n        {\n            length = 5;\n            breadth = 6;\n        }\n};\n\n/* Area class is derived from base class Rectangle. */\nclass Area : public Rectangle\n{\n    public:\n        float calc()\n        {\n            return length * breadth;\n        }\n};\n\nint main()\n{\n     Area a;\n     cout << \"Area = \" << a.calc() << \" square meters\" << endl;\n\n     return 0;\n}\n\n\n/* OUTPUT\n\nArea = 30 square meter\n\n*/\n"
+}
+{\n            total = (marks1+marks2+sportsmarks);\n            average = total/3.0;\n            cout << \"\\nRoll No : \" << rollno;\n            cout << \"\\nTotal: \" << total;\n            cout << \"\\nAverage : \" << average;\n        }\n};\n\nint main()\n{\n   result obj;\n\n   obj.get();\n   obj.getsportsmarks();\n   obj.display();\n\n   return 0;\n}\n\n\n/* OUTPUT\n\nRoll No: 007\nTotal: 225\nAverage: 75\n\n*/\n"
+}
+< obj.getage_GS() << endl;\n\n    return 0;\n}\n\n/* Output\n\nFather's age : 75\nSon's age : 45\nGrandson's age : 15\n\n*/\n"
+}
+playing Student Information*************\";\n\n\ts1.show();\n\n\tteacher t1;\n\n\tt1.read();\n\tcout << \"\\n*****************************Displaying Teacher Information************\";\n\n\tt1.show();\n\n\treturn 0;\n}\n\n\n/* OUTPUT\n\n************************ Displaying Student Information*************\nName = Akash\nPhone = 9283749093\nRoll No. = 007\nCourse = Computer Science\n*****************************Displaying Teacher Information************\nName = Akash\nPhone = 9283749093\nDepartment = CSE\nQualification = PhD\n\n*/\n"
+}

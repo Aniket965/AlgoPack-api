@@ -1,0 +1,3 @@
+{
+  "mainALGO": "(defn GCD [num1 num2]\n  (loop [a num1\n         b num2]\n    (if (= b 0)\n      a\n      (recur b (mod a b)))))\n\n(GCD 30 105) ;; => 15\n(GCD 105 30) ;; => 15\n(GCD 2 3);; => 1\n(GCD -3 3);; => -3\n"
+}

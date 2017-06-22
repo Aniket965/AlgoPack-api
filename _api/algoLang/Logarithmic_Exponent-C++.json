@@ -1,0 +1,3 @@
+{
+  "mainALGO": "#include <iostream>\n\nusing namespace std;\n\nlong long exponent (int base, int power) {\n  long long result = 1, value = base;\n\n  while (power) {\n    if (power & 1)\n      result *= value;\n    value *= value;\n\n    power /= 2;\n  }\n\n  return result;\n}\n\nint main () {\n  int base = 2, power = 32;\n  cout << \"Value of \" << base << \" raised to the power \" << power << \" is \" << exponent(base, power);\n  return 0;\n}\n\n/*\nOutput:\n\nValue of 2 raised to the power 32 is 4294967296\n\n*/\n"
+}

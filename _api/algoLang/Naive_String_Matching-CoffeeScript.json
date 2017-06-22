@@ -1,0 +1,3 @@
+{
+  "mainALGO": "search = (text, pattern) ->\n    lengthText = text.length\n    lengthPattern = pattern.length\n\n    for i in [0...lengthText - lengthPattern]\n        j = 0\n\n        while j < lengthPattern\n            break if text[i + j] isnt pattern[j]\n\n            j += 1\n\n        if j is lengthPattern\n            console.log \"Pattern found at \" + (i + 1)\n\n    0 # Return 0\n\ntext = \"namanchamanbomanamansanam\"\npattern = \"aman\"\nsearch text, pattern\n\n\n### Output\n\nPattern found at 2\nPattern found at 8\nPattern found at 17\n\n###\n"
+}

@@ -1,0 +1,3 @@
+{
+  "mainALGO": "def gcdFunction(x, y):\n    if x == 0:\n        return y\n    else:\n        return gcdFunction(y % x, x)\n\nx = 462\ny = 780\n\nprint(\"GCD of numbers \" + str(x) + \" and \" + str(y) + \" is \" + str(gcdFunction(x, y)))\n\n\n''' Output\n\nGCD of numbers 462 and 780 is 6\n\n'''\n"
+}

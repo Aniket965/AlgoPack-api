@@ -1,0 +1,3 @@
+{
+  "mainALGO": "Linear_Search = (array, desired) ->\n    for x in array\n        return true if x is desired\n\n    false\n\narray = [2, 4, 6, 7, 3, 1, 5]\n\nif Linear_Search array, 4\n    console.log \"Found\"\nelse\n    console.log \"Not Found\"\n\nif Linear_Search array, 9\n    console.log \"Found\"\nelse\n    console.log \"Not Found\"\n\n### Output\n\nFound\nNot Found\n\n###\n"
+}

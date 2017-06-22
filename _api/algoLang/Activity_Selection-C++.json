@@ -1,0 +1,3 @@
+{
+  "mainALGO": "#include <iostream>\r\n\r\nusing namespace std;\r\n\r\nvoid print_activities(int start[], int finish[], int n)\r\n{\r\n    cout << \"Following activities are selected\";\r\n    int i = 0;\r\n    cout << \"\\n\" << i << \"\\t\";\r\n    for (int j = 1; j < n; j++)\r\n    {\r\n        if (start[j] >= finish[i])\r\n        {\r\n            cout << j << \"\\t\";\r\n            i = j;\r\n        }\r\n    }\r\n}\r\n\r\nint main()\r\n{\r\n    int start[] = {1, 3, 1, 5, 8, 6};\r\n    int finish[] = {2, 6, 6, 7, 10, 8};\r\n    int n = sizeof(start) / sizeof(start[0]);\r\n    print_activities(start, finish, n);\r\n    return 0;\r\n}\r\n\r\n// Output\r\n// Following activities are selected\r\n// 0\t1\t4\r\n"
+}
