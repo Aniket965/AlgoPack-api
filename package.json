@@ -1,6 +1,6 @@
 {
-  "name": "algopack-api",
-  "version": "1.0.1",
+  "name": "algopack",
+  "version": "1.0.2",
   "description": "node module for generating static api for Algopack v2",
   "main": "index.js",
   "scripts": {
