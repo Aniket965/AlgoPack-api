@@ -7,19 +7,24 @@ var detect = require('language-detect');
 
 // module.exports = function () {
 var apiDir = process.cwd() + '/_api';
-
-if (!fs.existsSync(apiDir))
+// Api director
+if (!fs.existsSync(apiDir)){
     fs.mkdirSync(apiDir);
+    fs.mkdirSync(apiDir+"/algoLang");
+    fs.mkdirSync(apiDir+"/algos");
+}
+    
+
 
 var adsnRepoDir = process.cwd() + '/Algo_Ds_Notes';
 
 if (fs.existsSync(adsnRepoDir)) {
-    // removes old cloned repo
-    rimraf.sync(adsnRepoDir);
-    console.log("🍔 Deleted old Repo".yellow)
+    console.log("🍔 Thank you!".yellow)
+} else {
+  clone_adns_repo();
 }
 
-clone_adns_repo();
+
 
 // deleting git repo from cloned repository
 rimraf.sync(adsnRepoDir + '/.git');
@@ -35,7 +40,7 @@ var algoList = {
 };
 var mainAPI_Dir = process.cwd() + '/_api/algoList.json';
 jsonfile.writeFile(mainAPI_Dir, algoList, { spaces: 2 }, function (err) {
-    console.error(err)
+    // console.error(err)
 })
 
 
@@ -64,7 +69,7 @@ algoNames.forEach(function (algo) {
                 var mainAPI_Dir = process.cwd() + '/_api/algoLang/' + algo+"-"+lang+ '.json';
                 algoContent["mainALGO"] = fs.readFileSync(algoDir + '/' + file).toString();
                 jsonfile.writeFile(mainAPI_Dir, algoContent, { spaces: 2 }, function (err) {
-                    console.error(err)
+                    // console.error(err)
                 })
 
             }
@@ -80,15 +85,16 @@ algoNames.forEach(function (algo) {
 
     var mainAPI_Dir = process.cwd() + '/_api/algos/' + algo + '.json';
     jsonfile.writeFile(mainAPI_Dir, algoData, { spaces: 2 }, function (err) {
-        console.error(err)
+        // console.error(err)
     })
+    console.log("Completed ".cyan+algo.cyan+"!!!".cyan);
 
 
 });
 
 
 
-console.log("Completed !!!".cyan);
+
 
 
 
