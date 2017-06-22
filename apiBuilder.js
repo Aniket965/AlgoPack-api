@@ -3,6 +3,7 @@ var colors = require('colors');
 var exec = require('child_process').exec;
 var rimraf = require('rimraf');
 var jsonfile = require('jsonfile');
+var detect = require('language-detect');
 
 // module.exports = function () {
 var apiDir = process.cwd() + '/_api';
@@ -33,20 +34,38 @@ algoNames.forEach(function (algo) {
     var algoDir = adsnRepoDir + '/' + algo;
 
     // Reades files dir
+    var algoData = {};
     var algoList = [];
+    var langList = [];
     fs.readdirSync(algoDir).forEach(file => {
-        algoList.push(file);
+        if (!file.includes(".md")) {
+
+            var lang = detect.sync(algoDir + '/' + file)
+            if (lang != undefined){
+                  algoList.push(file);
+                if (lang === "Smalltalk") 
+                    langList.push("C#");
+                
+                else 
+                    langList.push(lang);
+                
+            }
+
+        }
     });
 
     // console.log(algoList);
 
-    data[algo] = algoList;
+    algoData['filepaths'] = algoList;
+    algoData['langauges'] = langList;
 
+    data[algo] = algoData;
 });
 
-var mainAPI_Dir  = process.cwd() + '/_api/algoList.json';
-jsonfile.writeFile(mainAPI_Dir, data,{spaces: 2}, function (err) {
-  console.error(err)
+
+var mainAPI_Dir = process.cwd() + '/_api/algoList.json';
+jsonfile.writeFile(mainAPI_Dir, data, { spaces: 2 }, function (err) {
+    console.error(err)
 })
 
 
