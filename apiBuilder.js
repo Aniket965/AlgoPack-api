@@ -26,12 +26,8 @@ module.exports = function () {
     }
 
 
-
-    // deleting git repo from cloned repository
-    rimraf.sync(adsnRepoDir + '/.git');
-
-    var algoNames = dirs(process.cwd() + '/Algo_Ds_Notes')
-    // console.log(algoNames);
+    var algoNames = dirs(process.cwd() + '/Algo_Ds_Notes');
+ algoNames.shift();
 
 
     // Api for algo list
@@ -47,50 +43,53 @@ module.exports = function () {
 
 
     algoNames.forEach(function (algo) {
+        if (algo != ".git") {
 
-        var algoDir = adsnRepoDir + '/' + algo;
+            var algoDir = adsnRepoDir + '/' + algo;
 
-        // Reades files dir
-        var algoData = {};
-        var algoList = [];
-        var langList = [];
-        fs.readdirSync(algoDir).forEach(file => {
-            if (!file.includes(".md")) {
+            // Reades files dir
+            var algoData = {};
+            var algoList = [];
+            var langList = [];
+            fs.readdirSync(algoDir).forEach(file => {
 
-                var lang = detect.sync(algoDir + '/' + file)
-                if (lang != undefined) {
-                    var algoContent = {};
-                    algoList.push(file);
-                    if (lang === "Smalltalk")
-                        langList.push("C#");
+                if (fs.lstatSync(algoDir + '/' + file).isFile()) {
+                    if (!file.includes(".md")) {
+                        var lang = detect.sync(algoDir + '/' + file)
+                        if (lang != undefined) {
+                            var algoContent = {};
+                            algoList.push(file);
+                            if (lang === "Smalltalk")
+                                langList.push("C#");
 
-                    else
-                        langList.push(lang);
+                            else
+                                langList.push(lang);
 
-                    var mainAPI_Dir = process.cwd() + '/_api/algoLang/' + algo + "-" + lang + '.json';
-                    algoContent["mainALGO"] = fs.readFileSync(algoDir + '/' + file).toString();
-                    jsonfile.writeFile(mainAPI_Dir, algoContent, { spaces: 2 }, function (err) {
-                        // console.error(err)
-                    })
+                            var mainAPI_Dir = process.cwd() + '/_api/algoLang/' + algo + "-" + lang + '.json';
+                            algoContent["mainALGO"] = fs.readFileSync(algoDir + '/' + file).toString();
+                            jsonfile.writeFile(mainAPI_Dir, algoContent, { spaces: 2 }, function (err) {
+                                // console.error(err)
+                            })
 
+                        }
+
+                    }
                 }
+            });
 
-            }
-        });
+            // console.log(algoList);
 
-        // console.log(algoList);
+            algoData['filenames'] = algoList;
+            algoData['langauges'] = langList;
+            algoData['no_of_files'] = langList.length;
 
-        algoData['filenames'] = algoList;
-        algoData['langauges'] = langList;
-        algoData['no_of_files'] = langList.length;
+            var mainAPI_Dir = process.cwd() + '/_api/algos/' + algo + '.json';
+            jsonfile.writeFile(mainAPI_Dir, algoData, { spaces: 2 }, function (err) {
+                // console.error(err)
+            })
+            console.log("Completed ".cyan + algo.cyan + "!!!".cyan);
 
-        var mainAPI_Dir = process.cwd() + '/_api/algos/' + algo + '.json';
-        jsonfile.writeFile(mainAPI_Dir, algoData, { spaces: 2 }, function (err) {
-            // console.error(err)
-        })
-        console.log("Completed ".cyan + algo.cyan + "!!!".cyan);
-
-
+        }
     });
 
 
@@ -113,6 +112,6 @@ module.exports = function () {
      * returns dirs in path
      */
     function dirs(p) {
-        return fs.readdirSync(p).filter(f => fs.statSync(p + "/" + f).isDirectory())
+        return fs.readdirSync(p).filter(f => fs.statSync(p + "/" + f).isDirectory());
     }
 }
