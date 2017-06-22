@@ -1,0 +1,475 @@
+{
+  "AKS_Primarility_Test": [
+    "AKS.c",
+    "AKS.cpp",
+    "AKS.java"
+  ],
+  "AVL_Tree": [
+    "AVL_Tree.c"
+  ],
+  "Activity_Selection": [
+    "Activity_Selection.c",
+    "Activity_Selection.cpp",
+    "Activity_Selection.go",
+    "Activity_Selection.java"
+  ],
+  "Bellmanford_Algorithm": [
+    "Bellmanford.cpp",
+    "Bellmanford.py"
+  ],
+  "Big_Integer": [
+    "Big_Integer.cpp"
+  ],
+  "Binary_Search": [
+    "Binary_Search.c",
+    "Binary_Search.coffee",
+    "Binary_Search.cpp",
+    "Binary_Search.cs",
+    "Binary_Search.go",
+    "Binary_Search.java",
+    "Binary_Search.js",
+    "Binary_Search.php",
+    "Binary_Search.py",
+    "Binary_Search.rb",
+    "README.md"
+  ],
+  "Binary_Search_Trees": [
+    "BinarySearchTree.c",
+    "BinarySearchTree.cpp",
+    "BinarySearchTree.cs",
+    "BinarySearchTree.java",
+    "BinarySearchTree.py",
+    "BinarySearchTree.rb"
+  ],
+  "Boyer_Moore_Algorithm": [
+    "Boyer_Moore.cpp",
+    "Boyer_Moore.py"
+  ],
+  "Breadth_First_Search": [
+    "BreadthFirstSearch.java",
+    "Breadth_First_Search.cpp",
+    "Breadth_First_Search.java",
+    "Breadth_First_Search.py"
+  ],
+  "Bubble_Sort": [
+    "Bubble_Sort.c",
+    "Bubble_Sort.coffee",
+    "Bubble_Sort.cpp",
+    "Bubble_Sort.cs",
+    "Bubble_Sort.java",
+    "Bubble_Sort.js",
+    "Bubble_Sort.php",
+    "Bubble_Sort.py",
+    "Bubble_Sort.rb",
+    "Bubble_Sort.sh",
+    "README.md"
+  ],
+  "Chinese_Remainder_Theorem": [
+    "Chinese_Remainder_Theorem.coffee",
+    "Chinese_Remainder_Theorem.cpp",
+    "Chinese_Remainder_Theorem.cs",
+    "Chinese_Remainder_Theorem.java",
+    "Chinese_Remainder_Theorem.py"
+  ],
+  "Circular_Linked_List": [
+    "Circular_Linked_List.c",
+    "Circular_Linked_List.cpp"
+  ],
+  "Counting_Sort": [
+    "Counting_Sort.c",
+    "Counting_Sort.coffee",
+    "Counting_Sort.cpp",
+    "Counting_Sort.cs",
+    "Counting_Sort.java",
+    "Counting_Sort.js",
+    "Counting_Sort.php",
+    "Counting_Sort.py",
+    "README.md"
+  ],
+  "Depth_First_Search": [
+    "Depth_First_Search.c",
+    "Depth_First_Search.cpp",
+    "Depth_First_Search.py"
+  ],
+  "Dijkstra_Algorithm": [
+    "Dijkstra_Algorithm.c",
+    "Dijkstra_Algorithm.cpp",
+    "Dijkstra_Algorithm.java",
+    "Dijkstra_Algorithm.py",
+    "Dijkstra_Algorithm_STL.cpp",
+    "Dijkstra_Efficient.cpp"
+  ],
+  "Dynamic_Programming_Rod_Cutting": [
+    "Dynamic_Programming_Rod_Cutting.cpp",
+    "Dynamic_Programming_Rod_Cutting.cs",
+    "Dynamic_Programming_Rod_Cutting.java",
+    "Dynamic_Programming_Rod_Cutting.js",
+    "Dynamic_Programming_Rod_Cutting.php",
+    "Dynamic_Programming_Rod_Cutting.py"
+  ],
+  "Dynamic_Stack_Arrays": [
+    "Dynamic_Stack.c",
+    "Dynamic_Stack.java",
+    "Dynamic_Stack.py"
+  ],
+  "Euclidean_Algorithm": [
+    "Euclidean_Algorithm.clj",
+    "Euclidean_Algorithm.coffee",
+    "Euclidean_Algorithm.cpp",
+    "Euclidean_Algorithm.cs",
+    "Euclidean_Algorithm.java",
+    "Euclidean_Algorithm.php",
+    "Euclidean_Algorithm.py",
+    "Euclidean_Algorithm.scala",
+    "README.md"
+  ],
+  "Extended_Euclidean_Algorithm": [
+    "Extended_Euclidean_Algorithm.coffee",
+    "Extended_Euclidean_Algorithm.cs",
+    "Extended_Euclidean_Algorithm.py"
+  ],
+  "Fenwick_Tree": [
+    "Fenwick_Tree.cpp"
+  ],
+  "Fermat_Little_Theorem": [
+    "Fermat_Little_Theorem.c",
+    "Fermat_Little_Theorem.coffee",
+    "Fermat_Little_Theorem.cpp",
+    "Fermat_Little_Theorem.py",
+    "Fermat_Little_Theorem.rb"
+  ],
+  "Find_Max_Subarray": [
+    "Find_Max_Subarray.rb"
+  ],
+  "Floyd_Warshall_Algorithm": [
+    "Floyd_Warshall_Algorithm.cpp",
+    "Floyd_Warshall_Algorithm.go",
+    "Floyd_Warshall_Algorithm.java",
+    "Floyd_Warshall_Algorithm.py"
+  ],
+  "Ford_Fulkerson_Method": [
+    "Ford_Fulkerson_Method.cpp",
+    "Ford_Fulkerson_Method.java",
+    "Ford_Fulkerson_Method.py"
+  ],
+  "Heap_Sort": [
+    "Heap_Sort.cpp",
+    "Heap_Sort.cs",
+    "Heap_Sort.java",
+    "Heap_Sort.js",
+    "Heap_Sort.py",
+    "Heap_Sort.rb"
+  ],
+  "Huffman-Encoding": [
+    "HuffmanCoding.cpp"
+  ],
+  "Inheritance(C++)": [
+    "Hierarchical.cpp",
+    "Multi_Level.cpp",
+    "Multiple.cpp",
+    "README.md",
+    "Single_Level.cpp"
+  ],
+  "Inheritance(Java)": [
+    "Hierarchical.java",
+    "Multi_Level.java",
+    "README.md",
+    "Single_Level.java"
+  ],
+  "Insertion_Sort": [
+    "Insertion_Sort.c",
+    "Insertion_Sort.coffee",
+    "Insertion_Sort.cpp",
+    "Insertion_Sort.cs",
+    "Insertion_Sort.java",
+    "Insertion_Sort.py",
+    "Insertion_Sort.rb"
+  ],
+  "Interpolation_Search": [
+    "Interpolation_Search.coffee",
+    "Interpolation_Search.cs",
+    "Interpolation_Search.go",
+    "Interpolation_Search.java",
+    "Interpolation_Search.js",
+    "Interpolation_Search.php",
+    "Interpolation_Search.py"
+  ],
+  "Kadane_Algorithm": [
+    "Kadane_Algorithm.coffee",
+    "Kadane_Algorithm.cpp",
+    "Kadane_Algorithm.cs",
+    "Kadane_Algorithm.java",
+    "Kadane_Algorithm.py",
+    "Kadane_Algorithm.rb"
+  ],
+  "Knapsack": [
+    "KnapsackProblem.java",
+    "Knapsack_DP.cpp"
+  ],
+  "Knuth_Morris_Pratt_Algorithm": [
+    "KMP.cpp",
+    "KMP.cs",
+    "KMP.py"
+  ],
+  "Kruskal_Algorithm": [
+    "Kruskal_Algorithm.cpp",
+    "Kruskal_OOP"
+  ],
+  "Linear_Search": [
+    "Linear_Search.c",
+    "Linear_Search.coffee",
+    "Linear_Search.cpp",
+    "Linear_Search.cs",
+    "Linear_Search.java",
+    "Linear_Search.php",
+    "Linear_Search.py",
+    "Linear_Search.rb",
+    "README.md"
+  ],
+  "Linked_List": [
+    "LinkedList.java",
+    "Linked_List.c",
+    "Linked_List.cpp",
+    "Linked_List.java",
+    "Linked_List.py"
+  ],
+  "Linked_List_Bubble_Sort": [
+    "Linked_List_Bubble_Sort.c",
+    "Linked_List_Bubble_Sort.cpp",
+    "Linked_List_Bubble_Sort.java"
+  ],
+  "Linked_List_Insertion_Sort": [
+    "LinkedList_Insertion_sort.c"
+  ],
+  "Linked_List_Selection_Sort": [
+    "Linked_List_Selection_Sort.cpp",
+    "Linked_List_Selection_Sort.java",
+    "Linked_List_Selection_Sort.rb"
+  ],
+  "Logarithmic_Exponent": [
+    "Logarithmic_Exponent.c",
+    "Logarithmic_Exponent.coffee",
+    "Logarithmic_Exponent.cpp",
+    "Logarithmic_Exponent.py"
+  ],
+  "Longest_Increasing_Subsequence": [
+    "LIS.cpp",
+    "LIS.rb"
+  ],
+  "Matrix_Chain_Multiplication": [
+    "Matrix_Chain_Multiplication_DP.cpp"
+  ],
+  "Merge_Sort": [
+    "Merge_Sort.c",
+    "Merge_Sort.coffee",
+    "Merge_Sort.cpp",
+    "Merge_Sort.go",
+    "Merge_Sort.java",
+    "Merge_Sort.js",
+    "Merge_Sort.py",
+    "Merge_Sort.rb"
+  ],
+  "Merge_With_Insertion_Sort": [
+    "Merge_With_Insertion_Sort.coffee",
+    "Merge_With_Insertion_Sort.cpp",
+    "Merge_With_Insertion_Sort.py"
+  ],
+  "Naive_String_Matching": [
+    "Naive_Approach.coffee",
+    "Naive_Approach.cpp",
+    "Naive_Approach.java",
+    "Naive_Approach.php",
+    "Naive_Approach.py",
+    "Naive_Approach.rb"
+  ],
+  "Ordered_Doubly_Linked_List": [
+    "Ordered_Doubly_Linked_List.hpp"
+  ],
+  "Prefix_Function": [
+    "Prefix_Function.cpp"
+  ],
+  "Prims_Algorithm": [
+    "Prims_Algorithm.c",
+    "Prims_Algorithm.cpp",
+    "Prims_Algorithm.py"
+  ],
+  "Priority_Queue": [
+    "HeapPriorityQueue.java",
+    "LeftistPriorityQueue.cpp"
+  ],
+  "Queue_Using_Arrays": [
+    "Queue_Using_Arrays.c",
+    "Queue_Using_Arrays.cpp",
+    "Queue_Using_Arrays.js",
+    "Queue_Using_Arrays.py"
+  ],
+  "Queue_Using_Linked_List": [
+    "Queue_Linked_List.c",
+    "Queue_Linked_List.cpp",
+    "Queue_Linked_List.java",
+    "Queue_Linked_List.py",
+    "Queue_using_template_linked_list"
+  ],
+  "Queues_Using_Stacks": [
+    "Efficient_Dequeue.java",
+    "Efficient_Enqueue.c",
+    "Efficient_Enqueue.java"
+  ],
+  "Quick_Sort": [
+    "Quick_Sort.c",
+    "Quick_Sort.coffee",
+    "Quick_Sort.cpp",
+    "Quick_Sort.java",
+    "Quick_Sort.py",
+    "Quick_Sort.rb"
+  ],
+  "Quicksort 3-way": [
+    "Quicksort 3-way.cpp",
+    "Quicksort 3-way.py"
+  ],
+  "Radix_Sort": [
+    "Radix_Sort.c",
+    "Radix_Sort.coffee",
+    "Radix_Sort.cpp",
+    "Radix_Sort.java",
+    "Radix_Sort.py",
+    "Radix_Sort.rb"
+  ],
+  "Randomized_Quick_Sort": [
+    "Randomized_Quick_Sort.rb"
+  ],
+  "Red_Black_tree": [
+    "RedBlackTrees.c"
+  ],
+  "Reversal_Linked_List": [
+    "Reversal_Linked_List.c",
+    "Reversal_Linked_List.cpp",
+    "Reversal_Linked_List.java",
+    "Reversal_Linked_List.py"
+  ],
+  "Segment_Tree_RMQ": [
+    "Segement_Tree_RMQ.cpp",
+    "Segement_Tree_RMQ.py",
+    "Segment_Tree_RMQ.java"
+  ],
+  "Selection_Sort": [
+    "README.md",
+    "Selection_Sort.c",
+    "Selection_Sort.coffee",
+    "Selection_Sort.cpp",
+    "Selection_Sort.cs",
+    "Selection_Sort.java",
+    "Selection_Sort.py",
+    "Selection_Sort.rb"
+  ],
+  "Shell_Sort": [
+    "Shell_Sort.coffee",
+    "Shell_Sort.cpp",
+    "Shell_Sort.java",
+    "Shell_Sort.py",
+    "Shell_sort.js"
+  ],
+  "Shortest_Path_Finder_Algorithm": [
+    "Shortest_Path_Finder_Algorithm.cpp"
+  ],
+  "Sieve_Of_Eratosthenes": [
+    "Sieve_Of_Eratosthenes.coffee",
+    "Sieve_Of_Eratosthenes.cpp",
+    "Sieve_Of_Eratosthenes.java",
+    "Sieve_Of_Eratosthenes.py"
+  ],
+  "Sleep_Sort": [
+    "Sleep_Sort.c",
+    "Sleep_Sort.coffee",
+    "Sleep_Sort.cpp",
+    "Sleep_Sort.java",
+    "Sleep_Sort.py",
+    "Sleep_Sort.rb",
+    "Sleep_Sort.sh",
+    "sleep_sort.erl"
+  ],
+  "Stacks_Using_Arrays": [
+    "README.md",
+    "Stacks.cpp",
+    "Stacks.java",
+    "Stacks.py"
+  ],
+  "Stacks_Using_Linked_Lists": [
+    "Stacks.cpp",
+    "Stacks.java",
+    "Stacks.py"
+  ],
+  "Stacks_Using_Queues": [
+    "Efficient_Dequeue.cpp",
+    "Efficient_Dequeue.java",
+    "Efficient_Enqueue.cpp",
+    "Efficient_Enqueue.java",
+    "Stack.py"
+  ],
+  "Strassen’s Algorithm": [
+    "Strassen’s Algorithm.cpp"
+  ],
+  "Suffix_Array": [
+    "README.md",
+    "Suffix_Array.cpp"
+  ],
+  "Ternary_Search": [
+    "Ternary_Search.coffee",
+    "Ternary_Search.cpp",
+    "Ternary_Search.java",
+    "Ternary_Search.py"
+  ],
+  "Topological_Sort": [
+    "Topological_Sort.cpp",
+    "Topological_Sort.py"
+  ],
+  "Treap": [
+    "Treap.cpp"
+  ],
+  "Tree_Inorder_Traversal": [
+    "Tree_Inorder_Traversal.c",
+    "Tree_Inorder_Traversal.cpp",
+    "Tree_Inorder_Traversal.java",
+    "Tree_Inorder_Traversal.php",
+    "Tree_Inorder_Traversal.py"
+  ],
+  "Tree_Levelorder_Traversal": [
+    "Tree_Levelorder_Transversal.c",
+    "Tree_Levelorder_Traversal.cpp",
+    "Tree_Levelorder_Traversal.java",
+    "Tree_Levelorder_Traversal.php",
+    "Tree_Levelorder_Traversal.py"
+  ],
+  "Tree_Postorder_Traversal": [
+    "Tree_Postorder_Traversal.c.c",
+    "Tree_Postorder_Traversal.cpp",
+    "Tree_Postorder_Traversal.java",
+    "Tree_Postorder_Traversal.php",
+    "Tree_Postorder_Traversal.py"
+  ],
+  "Tree_Preorder_Traversal": [
+    "Tree_Preorder_Traversal.c",
+    "Tree_Preorder_Traversal.cpp",
+    "Tree_Preorder_Traversal.java",
+    "Tree_Preorder_Traversal.php",
+    "Tree_Preorder_Traversal.py"
+  ],
+  "Trie_For_Natural_Numbers": [
+    "Trie.cpp"
+  ],
+  "Trie_For_Words": [
+    "Trie.cpp"
+  ],
+  "Z_Algorithm": [
+    "Z_Algorithm.coffee",
+    "Z_Algorithm.cpp",
+    "Z_Algorithm.py"
+  ],
+  "shaker_sort": [
+    "Shaker_sort.cpp",
+    "Shaker_sort.cs",
+    "Shaker_sort.java",
+    "Shaker_sort.js",
+    "shaker_sort.c"
+  ]
+}
