@@ -13,13 +13,13 @@ if (!fs.existsSync(apiDir))
 
 var adsnRepoDir = process.cwd() + '/Algo_Ds_Notes';
 
-// if (fs.existsSync(adsnRepoDir)) {
-//     // removes old cloned repo
-//     rimraf.sync(adsnRepoDir);
-//     console.log("🍔 Deleted old Repo".yellow)
-// }
+if (fs.existsSync(adsnRepoDir)) {
+    // removes old cloned repo
+    rimraf.sync(adsnRepoDir);
+    console.log("🍔 Deleted old Repo".yellow)
+}
 
-// clone_adns_repo();
+clone_adns_repo();
 
 // deleting git repo from cloned repository
 rimraf.sync(adsnRepoDir + '/.git');
@@ -88,7 +88,7 @@ algoNames.forEach(function (algo) {
 
 
 
-
+console.log("Completed !!!".cyan);
 
 
 
