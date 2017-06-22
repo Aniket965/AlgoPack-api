@@ -21,7 +21,6 @@
     "colors": "^1.1.2",
     "jsonfile": "^3.0.0",
     "language-detect": "^1.1.0",
-    "prompt": "^1.0.0",
     "rimraf": "^2.6.1"
   }
 }
