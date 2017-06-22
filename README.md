@@ -1,22 +1,22 @@
-# AlgoPack-api
+# algopack-api
 node module for building and hosting api for Algopack :Online version
 
 [NPM](https://www.npmjs.com/package/algopack)
 ## Installation
 ```javascript
-npm install algopack-api -g
+npm install algopack -g
 ```
 OR
 ```javascript
-sudo npm install algopack-api -g
+sudo npm install algopack -g
 ```
  ## usage
  ```javascript
-algopack-api build
+algopack build
  ```
 
 OR
  ```javascript
- sudo algopack-api build
+ sudo algopack build
  ```
  - api will be created in _api folder
