@@ -1,0 +1,19 @@
+{
+  "name": "algopack-api",
+  "version": "1.0.0",
+  "description": "node module for generating static api for Algopack v2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aniket965/AlgoPack-api.git"
+  },
+  "author": "aniket965",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aniket965/AlgoPack-api/issues"
+  },
+  "homepage": "https://github.com/Aniket965/AlgoPack-api#readme"
+}
