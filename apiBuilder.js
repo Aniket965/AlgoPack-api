@@ -5,7 +5,7 @@ var rimraf = require('rimraf');
 var jsonfile = require('jsonfile');
 var detect = require('language-detect');
 
-// module.exports = function () {
+module.exports = function () {
 var apiDir = process.cwd() + '/_api';
 // Api director
 if (!fs.existsSync(apiDir)){
@@ -114,4 +114,4 @@ function clone_adns_repo() {
 function dirs(p) {
     return fs.readdirSync(p).filter(f => fs.statSync(p + "/" + f).isDirectory())
 }
-// }
+}
