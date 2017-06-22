@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Aniket965/AlgoPack-api/issues"
   },
-  "homepage": "https://github.com/Aniket965/AlgoPack-api#readme"
+  "homepage": "https://github.com/Aniket965/AlgoPack-api#readme",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "colors": "^1.1.2",
+    "prompt": "^1.0.0"
+  }
 }
