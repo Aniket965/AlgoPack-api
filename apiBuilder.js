@@ -27,7 +27,7 @@ module.exports = function () {
 
 
     var algoNames = dirs(process.cwd() + '/Algo_Ds_Notes');
- algoNames.shift();
+    algoNames.shift();
 
 
     // Api for algo list
@@ -40,7 +40,7 @@ module.exports = function () {
         // console.error(err)
     })
 
-
+    var languages_list = [];
 
     algoNames.forEach(function (algo) {
         if (algo != ".git") {
@@ -59,13 +59,19 @@ module.exports = function () {
                         if (lang != undefined) {
                             var algoContent = {};
                             algoList.push(file);
-                            if (lang === "Smalltalk")
+                            
+                            if (lang === "Smalltalk"){
                                 langList.push("C#");
-
-                            else
+                                 var mainAPI_Dir = process.cwd() + '/_api/algoLang/' + algo + "-" + "C#" + '.json';
+                                 languages_list.push("C#")
+                            }
+                            else{
                                 langList.push(lang);
-
-                            var mainAPI_Dir = process.cwd() + '/_api/algoLang/' + algo + "-" + lang + '.json';
+                                var mainAPI_Dir = process.cwd() + '/_api/algoLang/' + algo + "-" + lang + '.json';
+                                languages_list.push(lang)
+                            }
+                           
+                            
                             algoContent["mainALGO"] = fs.readFileSync(algoDir + '/' + file).toString();
                             jsonfile.writeFile(mainAPI_Dir, algoContent, { spaces: 2 }, function (err) {
                                 // console.error(err)
@@ -86,7 +92,21 @@ module.exports = function () {
             var mainAPI_Dir = process.cwd() + '/_api/algos/' + algo + '.json';
             jsonfile.writeFile(mainAPI_Dir, algoData, { spaces: 2 }, function (err) {
                 // console.error(err)
-            })
+            });
+            function onlyUnique(value, index, self) {
+                return self.indexOf(value) === index;
+            }
+
+            var langData = {
+                languages: languages_list.filter(onlyUnique)
+            }
+            
+            var lang_api = process.cwd() + '/_api/langs.json';
+            jsonfile.writeFile(lang_api, langData,{ spaces: 2 }, function (err) {
+                // console.error(err)
+            });
+
+
             console.log("Completed ".cyan + algo.cyan + "!!!".cyan);
 
         }
