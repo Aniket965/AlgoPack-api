@@ -1,6 +1,6 @@
 {
   "name": "algopack",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "node module for generating static api for Algopack v2",
   "main": "index.js",
   "bin": {

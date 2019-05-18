@@ -15,116 +15,115 @@ module.exports = function () {
         fs.mkdirSync(apiDir + "/algos");
     }
 
-
-
     var adsnRepoDir = process.cwd() + '/Algo_Ds_Notes';
 
     if (fs.existsSync(adsnRepoDir)) {
         console.log("🍔 Thank you!".yellow)
+        build()
     } else {
-        clone_adns_repo();
+        clone_repo();
     }
 
 
-    var algoNames = dirs(process.cwd() + '/Algo_Ds_Notes');
-    algoNames.shift();
+    const build = () => {
+
+        var algoNames = dirs(process.cwd() + '/Algo_Ds_Notes');
+        algoNames.shift();
 
 
-    // Api for algo list
-    var algoList = {
-        availabe_algo: algoNames,
-        size: algoNames.length
-    };
-    var mainAPI_Dir = process.cwd() + '/_api/algoList.json';
-    jsonfile.writeFile(mainAPI_Dir, algoList, { spaces: 2 }, function (err) {
-        // console.error(err)
-    })
+        // Api for algo list
+        var algoList = {
+            availabe_algo: algoNames,
+            size: algoNames.length
+        };
+        var mainAPI_Dir = process.cwd() + '/_api/algoList.json';
+        jsonfile.writeFile(mainAPI_Dir, algoList, { spaces: 2 }, function (err) {
+            // console.error(err)
+        })
 
-    var languages_list = [];
+        var languages_list = [];
 
-    algoNames.forEach(function (algo) {
-        if (algo != ".git") {
 
-            var algoDir = adsnRepoDir + '/' + algo;
+        algoNames.forEach(function (algo) {
+            if (algo != ".git") {
 
-            // Reades files dir
-            var algoData = {};
-            var algoList = [];
-            var langList = [];
-            fs.readdirSync(algoDir).forEach(file => {
+                var algoDir = adsnRepoDir + '/' + algo;
 
-                if (fs.lstatSync(algoDir + '/' + file).isFile()) {
-                    if (!file.includes(".md")) {
-                        var lang = detect.sync(algoDir + '/' + file)
-                        if (lang != undefined) {
-                            var algoContent = {};
-                            algoList.push(file);
-                            
-                            if (lang === "Smalltalk"){
-                                langList.push("C#");
-                                 var mainAPI_Dir = process.cwd() + '/_api/algoLang/' + algo + "-" + "C#" + '.json';
-                                 languages_list.push("C#")
+                // Reades files dir
+                var algoData = {};
+                var algoList = [];
+                var langList = [];
+                fs.readdirSync(algoDir).forEach(file => {
+
+                    if (fs.lstatSync(algoDir + '/' + file).isFile()) {
+                        if (!file.includes(".md")) {
+                            var lang = detect.sync(algoDir + '/' + file)
+                            if (lang != undefined) {
+                                var algoContent = {};
+                                algoList.push(file);
+
+                                if (lang === "Smalltalk") {
+                                    langList.push("C#");
+                                    var mainAPI_Dir = process.cwd() + '/_api/algoLang/' + algo + "-" + "C#" + '.json';
+                                    languages_list.push("C#")
+                                }
+                                else {
+                                    langList.push(lang);
+                                    var mainAPI_Dir = process.cwd() + '/_api/algoLang/' + algo + "-" + lang + '.json';
+                                    languages_list.push(lang)
+                                }
+
+
+                                algoContent["mainALGO"] = fs.readFileSync(algoDir + '/' + file).toString();
+                                jsonfile.writeFile(mainAPI_Dir, algoContent, { spaces: 2 }, function (err) {
+                                    // console.error(err)
+                                })
+
                             }
-                            else{
-                                langList.push(lang);
-                                var mainAPI_Dir = process.cwd() + '/_api/algoLang/' + algo + "-" + lang + '.json';
-                                languages_list.push(lang)
-                            }
-                           
-                            
-                            algoContent["mainALGO"] = fs.readFileSync(algoDir + '/' + file).toString();
-                            jsonfile.writeFile(mainAPI_Dir, algoContent, { spaces: 2 }, function (err) {
-                                // console.error(err)
-                            })
 
                         }
-
                     }
+                });
+
+
+                algoData['filenames'] = algoList;
+                algoData['langauges'] = langList;
+                algoData['no_of_files'] = langList.length;
+
+                var mainAPI_Dir = process.cwd() + '/_api/algos/' + algo + '.json';
+                jsonfile.writeFile(mainAPI_Dir, algoData, { spaces: 2 }, function (err) {
+                    // console.error(err)
+                });
+                function onlyUnique(value, index, self) {
+                    return self.indexOf(value) === index;
                 }
-            });
 
-            // console.log(algoList);
+                var langData = {
+                    languages: languages_list.filter(onlyUnique)
+                }
 
-            algoData['filenames'] = algoList;
-            algoData['langauges'] = langList;
-            algoData['no_of_files'] = langList.length;
+                var lang_api = process.cwd() + '/_api/langs.json';
+                jsonfile.writeFile(lang_api, langData, { spaces: 2 }, function (err) {
+                    // console.error(err)
+                });
 
-            var mainAPI_Dir = process.cwd() + '/_api/algos/' + algo + '.json';
-            jsonfile.writeFile(mainAPI_Dir, algoData, { spaces: 2 }, function (err) {
-                // console.error(err)
-            });
-            function onlyUnique(value, index, self) {
-                return self.indexOf(value) === index;
+
+                console.log("[+]  ".green + "Completed ".cyan + algo.yellow);
+
             }
+        });
 
-            var langData = {
-                languages: languages_list.filter(onlyUnique)
-            }
-            
-            var lang_api = process.cwd() + '/_api/langs.json';
-            jsonfile.writeFile(lang_api, langData,{ spaces: 2 }, function (err) {
-                // console.error(err)
-            });
+    }
 
+    function clone_repo() {
 
-            console.log("Completed ".cyan + algo.cyan + "!!!".cyan);
-
-        }
-    });
-
-
-
-
-
-
-
-    // functions
-    function clone_adns_repo() {
+        console.log("[+]  ".green + "Cloning Algo_ds_Notes ".cyan);
         exec('git clone https://github.com/algobook/Algo_Ds_Notes.git', (err, stdout, stderr) => {
             if (err) {
-                console.error(err); console.log("cloned");
+                console.error(err);
             } else {
-                console.log("cloned🎉🎉🎉🎉🎉".green);
+                console.log("[+]  Cloned  🎉".green);
+                build();
             }
         });
     }
