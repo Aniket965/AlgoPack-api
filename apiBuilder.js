@@ -16,15 +16,6 @@ module.exports = function () {
     }
 
     var adsnRepoDir = process.cwd() + '/Algo_Ds_Notes';
-
-    if (fs.existsSync(adsnRepoDir)) {
-        console.log("🍔 Thank you!".yellow)
-        build()
-    } else {
-        clone_repo();
-    }
-
-
     const build = () => {
 
         var algoNames = dirs(process.cwd() + '/Algo_Ds_Notes');
@@ -74,7 +65,7 @@ module.exports = function () {
                                 }
 
 
-                                algoContent["mainALGO"] = fs.readFileSync(algoDir + '/' + file).toString();
+                                algoContent["mainALGO"] = `${fs.readFileSync(algoDir + '/' + file,'utf-8').trim().toString()}`
                                 jsonfile.writeFile(mainAPI_Dir, algoContent, { spaces: 2 }, function (err) {
                                     // console.error(err)
                                 })
@@ -114,6 +105,16 @@ module.exports = function () {
         });
 
     }
+
+    if (fs.existsSync(adsnRepoDir)) {
+        console.log("🍔 Thank you!".yellow)
+        build()
+    } else {
+        clone_repo();
+    }
+
+
+  
 
     function clone_repo() {
 
